@@ -13,15 +13,24 @@
     <meta name="creation_date" content="12.09.2023">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <style>
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
         body {
             font-family: Arial, sans-serif;
-            background-color: #333333;
             color: steelblue;
             margin: 0;
             padding: 20px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            
+            position: relative;
+        }
+        body::after {
+            content: '';
+            background: linear-gradient(135deg, #502050, #204060);
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            filter: blur(5px);
+            z-index: -1;
         }
 
         p {
