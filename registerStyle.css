@@ -195,7 +195,7 @@ form.sign-in-form {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, #ff0000, #ffffff);
+  background-image: url(tree.jpg);
 
   transition: 1.8s ease-in-out;
   border-radius: 50%;
@@ -234,6 +234,7 @@ form.sign-in-form {
 }
 
 .panel h3 {
+  color: #444;
   font-weight: 600;
   line-height: 1;
   font-size: 1.5rem;
